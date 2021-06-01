@@ -20,6 +20,11 @@
 				<li><a href="#iframe">iframe</a></li>
 				<li><a href="#embed">embed</a></li>
 				<li><a href="#object">object</a></li>
+				<li><a href="#svg">svg</a></li>
+				<li><a href="#table">table</a></li>
+				<li><a href="#form">form</a></li>
+				<li><a href="#input">input</a></li>
+				<li><a href="#button">svg</a></li>
 				<li><a href="#bottom">bottom</a></li>
 			</ul>
 		</section>
@@ -38,12 +43,6 @@
 			<p>over the lazy dog</p>
 			<h6>header_6</h6>
 			<p>and other things like that</p>
-		</section>
-		
-		<!-- input -->
-		<section id="input">
-			<h2>&lt;!-- input --&gt;</h2>
-			<input type="text" disabled>
 		</section>
 		
 		<!-- lists -->
@@ -125,21 +124,153 @@
 		<!-- embed -->
 		<section id="embed">
 			<h2>&lt;!-- embed --&gt;</h2>
-			<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZnUv04O7HVw" title="An Xbox Killed My Dog" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kbaSNQL5uMk" title="An Xbox Killed My Dog" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</section>
 		
 		<!-- object -->
 		<section id="object">
 			<h2>&lt;!-- object --&gt;</h2>
-			<object>
+			<object data="image/911.png" width="664" height="495" ></object>
 		</section>
 		
+		<!-- SVG -->
+		<section id="svg">
+			<h2>&lt;!-- svg --&gt;</h2>
+			<svg width="500" height="500">
+				<rect width="100%" height="100%" fill="orange"/>
+				<polygon points="120,0 240,225 0,225" fill="red"/>
+			</svg>
+		</section>
+		
+		<!-- table -->
+		<section id="table">
+			<h2>&lt;-- table -- &gt;</h2>
+			<table>
+				<tr>
+					<td>un</td>
+					<td>deux</td>
+					<td>trois</td>
+				</tr>
+				<tr>
+					<td>ichi</td>
+					<td>ni</td>
+					<td>san</td>
+				</tr>
+			</table>
+		</section>
+		
+		<!-- form -->
+		<section id="form">
+			<h2>&lt;-- form --&gt;</h2>
+			<form action="" method="post">
+			</form>
+		</section>
+		
+		<!-- input -->
+		<section id="input">
+			<h2>&lt;-- input --&gt;</h2>
+			<!-- fieldset groups input elements -->
+			<fieldset>
+				<p>button</p>
+				<input type="button" value="click'ere">
+				<input type="button" value="click'ere" disabled>
+			</fieldset>
+			<fieldset>
+				<p>checkbox</p>
+				<input type="checkbox">
+				<label>default</label>
+				<input type="checkbox" checked>
+				<label>checked</label>
+				<input type="checkbox" disabled>
+				<label>disabled</label>
+			</fieldset>
+			<fieldset>
+				<p>color</p>
+				<input type="color" value="#FF0000">
+				<label>default: red</label>
+				<input type="color" value="#00FF00">
+				<label>default: green</label>
+				<input type="color" value="#0000FF">
+				<label>default: blue</label>
+				<input type="color" value="#FFFFFF" disabled>
+				<label>default: disabled</label>
+			</fieldset>
+			<fieldset>
+				<p>date</p>
+				<label>REROLL - ... from 1999 to 2999</label>
+				<input type="date" required min="1999-12-31" max="2099-12-31">
+			</fieldset>
+			<fieldset>
+				<p>email</p>
+				<input type="email" required minlength="4" placeholder="enter your email address" list="defaultEmails">
+				<input type="email" disabled minlength="4" placeholder="disabled email box">
+				<datalist id="defaultEmails">
+					<option value="self@crool.world">
+					<option value="left@crool.world">
+					<option value="right@crool.world">
+					<option value="bot@crool.world">
+				</datalist>
+			</fieldset>
+			<fieldset>
+				<p>file</p>
+				<input type="file" accept="image/*" multiple>
+				<input type="file" accept="image/jpeg, image/png" multiple>
+				<input type="file" accept=".jpg, .png" multiple>
+				<input type="file" disabled>
+			</fieldset>
+			<fieldset>
+				<p>image</p>
+				<input type="image" alt="CROOL WORLD" src="image/crool-world.png">
+			</fieldset>
+			<fieldset>
+				<p>number</p>
+				<input type="number" min="10" max="45" step="5" placeholder="10 - 45">
+				<label>not read-only</label>
+				<input type="number" min="10" max="45" step="5" placeholder="10 - 45">
+				<label>read-only</label>
+				<input type="number" disabled>
+				<label>disabled</label>
+			</fieldset>
+			<fieldset>
+				<p>password</p>
+				<input type="password" minlength="8" required placeholder="enter password">
+				<input type="password" minlength="8" placeholder="disabled password box" disabled>
+			</fieldset>
+			<fieldset>
+				<p>radio</p>
+				<input type="radio">
+				<label>unchecked</label>
+				<input type="radio" checked>
+				<label>checked</label>
+				<input type="radio" disabled>
+				<label>disabled</label>
+			</fieldset>
+			<fieldset>
+				<p>range</p>
+				<input type="range" min="0" step="2" max="10">
+				<input type="range" disabled>
+			</fieldset>
+			<p>And others, which are very similiar to the previous ones but with <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">nuances</a>.</p>
+		</section>
+
+		<!-- textarea -->
+		<section id="textarea">
+			<h2>&lt;-- textarea --&gt;</h2>
+			<textarea rows="5" cols="40" placeholder="type sumthn'ere"></textarea>
+			<textarea rows="5" cols="40" placeholder="this one's disabled" disabled></textarea>
+		</section>
+
+		<!-- button -->
+		<section id="section">
+			<h2>&lt;-- button --&gt;</h2>
+			<button type="submit">button'ere</button>
+		</section>
+
 		<section id="bottom">
 			<h2>&lt;!-- navigation --&gt;</h2>
 			<ul>
 				<li><a href="#top">top</a></li>
 				<li><a href="#header">header</a></li>
-				<li><a href="#input">input</a></li>
 				<li><a href="#lists">lists</a></li>
 				<li><a href="#abbr">abbr</a></li>
 				<li><a href="#blockquote">blockquote</a></li>
@@ -148,6 +279,11 @@
 				<li><a href="#iframe">iframe</a></li>
 				<li><a href="#embed">embed</a></li>
 				<li><a href="#object">object</a></li>
+				<li><a href="#svg">svg</a></li>
+				<li><a href="#table">table</a></li>
+				<li><a href="#form">form</a></li>
+				<li><a href="#input">input</a></li>
+				<li><a href="#button">svg</a></li>
 				<li>bottom</li>
 			</ul>
 		</section>
