@@ -24,7 +24,8 @@
 				<li><a href="#table">table</a></li>
 				<li><a href="#form">form</a></li>
 				<li><a href="#input">input</a></li>
-				<li><a href="#button">svg</a></li>
+				<li><a href="#textarea">textarea</a></li>
+				<li><a href="#button">button</a></li>
 				<li><a href="#bottom">bottom</a></li>
 			</ul>
 		</section>
@@ -162,7 +163,8 @@
 		<!-- form -->
 		<section id="form">
 			<h2>&lt;-- form --&gt;</h2>
-			<form action="" method="post">
+			<form action="/middle" method="push">
+				<input name="test_sent_input">
 			</form>
 		</section>
 		
@@ -171,12 +173,12 @@
 			<h2>&lt;-- input --&gt;</h2>
 			<!-- fieldset groups input elements -->
 			<fieldset>
-				<p>button</p>
+				<legend>button</legend>
 				<input type="button" value="click'ere">
 				<input type="button" value="click'ere" disabled>
 			</fieldset>
 			<fieldset>
-				<p>checkbox</p>
+				<legend>checkbox</legend>
 				<input type="checkbox">
 				<label>default</label>
 				<input type="checkbox" checked>
@@ -185,7 +187,7 @@
 				<label>disabled</label>
 			</fieldset>
 			<fieldset>
-				<p>color</p>
+				<legend>color</legend>
 				<input type="color" value="#FF0000">
 				<label>default: red</label>
 				<input type="color" value="#00FF00">
@@ -196,12 +198,12 @@
 				<label>default: disabled</label>
 			</fieldset>
 			<fieldset>
-				<p>date</p>
+				<legend>date</legend>
 				<label>REROLL - ... from 1999 to 2999</label>
 				<input type="date" required min="1999-12-31" max="2099-12-31">
 			</fieldset>
 			<fieldset>
-				<p>email</p>
+				<legend>email</legend>
 				<input type="email" required minlength="4" placeholder="enter your email address" list="defaultEmails">
 				<input type="email" disabled minlength="4" placeholder="disabled email box">
 				<datalist id="defaultEmails">
@@ -212,18 +214,18 @@
 				</datalist>
 			</fieldset>
 			<fieldset>
-				<p>file</p>
+				<legend>file</legend>
 				<input type="file" accept="image/*" multiple>
 				<input type="file" accept="image/jpeg, image/png" multiple>
 				<input type="file" accept=".jpg, .png" multiple>
 				<input type="file" disabled>
 			</fieldset>
 			<fieldset>
-				<p>image</p>
+				<legend>image</legend>
 				<input type="image" alt="CROOL WORLD" src="image/crool-world.png">
 			</fieldset>
 			<fieldset>
-				<p>number</p>
+				<legend>number</legend>
 				<input type="number" min="10" max="45" step="5" placeholder="10 - 45">
 				<label>not read-only</label>
 				<input type="number" min="10" max="45" step="5" placeholder="10 - 45">
@@ -232,12 +234,12 @@
 				<label>disabled</label>
 			</fieldset>
 			<fieldset>
-				<p>password</p>
+				<legend>password</legend>
 				<input type="password" minlength="8" required placeholder="enter password">
 				<input type="password" minlength="8" placeholder="disabled password box" disabled>
 			</fieldset>
 			<fieldset>
-				<p>radio</p>
+				<legend>radio</legend>
 				<input type="radio">
 				<label>unchecked</label>
 				<input type="radio" checked>
@@ -246,7 +248,7 @@
 				<label>disabled</label>
 			</fieldset>
 			<fieldset>
-				<p>range</p>
+				<legend>range</legend>
 				<input type="range" min="0" step="2" max="10">
 				<input type="range" disabled>
 			</fieldset>
@@ -261,11 +263,14 @@
 		</section>
 
 		<!-- button -->
-		<section id="section">
+		<section id="button">
 			<h2>&lt;-- button --&gt;</h2>
-			<button type="submit">button'ere</button>
+			<button type="submit">submit</button>
+			<button type="button">button'ere</button>
+			<button type="reset">reset button</button>
 		</section>
 
+		<!-- navigation -->
 		<section id="bottom">
 			<h2>&lt;!-- navigation --&gt;</h2>
 			<ul>
@@ -283,7 +288,8 @@
 				<li><a href="#table">table</a></li>
 				<li><a href="#form">form</a></li>
 				<li><a href="#input">input</a></li>
-				<li><a href="#button">svg</a></li>
+				<li><a href="#textarea">textarea</a></li>
+				<li><a href="#button">button</a></li>
 				<li>bottom</li>
 			</ul>
 		</section>
