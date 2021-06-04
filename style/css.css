@@ -12,6 +12,8 @@ body
 
 header
 {
+	width: 100vw;
+
 	padding-left: 25px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -32,10 +34,18 @@ main
 	*/
 }
 
+article
+{
+	width: 60vw;
+	border: 2px dashed white;
+}
+
 footer
 {
 	width: 100vw;
 	text-align: right;
+	padding-right: 5px;
+	padding-bottom: 5px;
 	background: rgba( 0, 0, 0, 0.5 );
 	color: #FFFFFF;
 }
