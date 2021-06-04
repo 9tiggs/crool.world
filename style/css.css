@@ -28,7 +28,7 @@ main
 {
 	width: 100vw;
 	height: 100vw;
-
+	
 	/*
 	background: linear-gradient( to left, steelblue, black );
 	*/
@@ -37,7 +37,33 @@ main
 article
 {
 	width: 60vw;
+	padding: 2%;
 	border: 2px dashed white;
+}
+
+nav
+{
+	width: 250px;
+	background: #000000;
+	
+	padding: 1%;
+	line-height: 2em;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+nav a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+nav a:hover
+{
+	color: #CCCCCC;
+	/*
+	color: orange;
+	*/
 }
 
 footer
