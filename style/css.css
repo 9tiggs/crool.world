@@ -29,6 +29,7 @@ main
 	width: 100vw;
 	height: 100vw;
 	
+	display: flex;
 	/*
 	background: linear-gradient( to left, steelblue, black );
 	*/
