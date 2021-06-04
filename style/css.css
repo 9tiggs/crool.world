@@ -1,9 +1,45 @@
-html
+*
 {
-	font-family: Helvetica;
+	margin: 0px;
+}
+
+body
+{
+	font-family: Helvetica, sans-serif;
+
+	background: url( "../image/amazon-patent.png");
 }
 
 header
 {
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
 	font-family: Arial;
+	text-align: left;
+
+	background: linear-gradient( 90deg, orange, #FFFFFF );
+}
+
+main
+{
+	width: 100vw;
+	height: 100vw;
+
+	/*
+	background: linear-gradient( to left, steelblue, black );
+	*/
+}
+
+footer
+{
+	text-align: right;
+	background: rgba( 0, 0, 0, 0.5 );
+	color: #FFFFFF;
+}
+
+#message
+{
+	font-size: 0.5em;
 }
