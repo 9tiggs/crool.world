@@ -1,0 +1,14 @@
+*
+{
+	background-color: #000;
+
+	margin: 0px;
+}
+
+video
+{
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+}
